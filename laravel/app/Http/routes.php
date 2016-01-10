@@ -19,6 +19,7 @@ Route::get('/',[
 Route::get('/apropos',[
     'as'=>'apropos',
     'uses'=>'LinkController@apropos'
+	'middleware' => 'auth'
 ]);
 Route::get('/inscription',[
     'as'=>'inscription',
